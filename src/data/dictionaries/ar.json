@@ -1,5 +1,6 @@
 {
   "navigation": {
+    "students": "طالب",
     "dashboards": "لوحات القيادة",
     "crm": "إدارة علاقات العملاء",
     "analytics": "تحليلات",

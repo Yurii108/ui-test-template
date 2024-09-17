@@ -25,6 +25,11 @@ const defaultSuggestions: DefaultSuggestionsType[] = [
     sectionLabel: 'Popular Searches',
     items: [
       {
+        label: 'Students',
+        href: '/apps/students',
+        icon: 'tabler-chart-pie-2'
+      },
+      {
         label: 'Analytics',
         href: '/dashboards/analytics',
         icon: 'tabler-trending-up'

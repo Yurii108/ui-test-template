@@ -19,6 +19,7 @@ import themeConfig from '@configs/themeConfig'
 // Hook Imports
 import useVerticalNav from '@menu/hooks/useVerticalNav'
 import { useSettings } from '@core/hooks/useSettings'
+import { Badge } from '@mui/material'
 
 type LogoTextProps = {
   isHovered?: VerticalNavContextProps['isHovered']
@@ -68,7 +69,15 @@ const Logo = ({ color }: { color?: CSSProperties['color'] }) => {
 
   return (
     <div className='flex items-center'>
-      <VuexyLogo className='text-2xl text-primary' />
+      <Badge
+        color='primary'
+        variant='dot'
+        overlap='circular'
+        anchorOrigin={{ vertical: 'bottom', horizontal: 'left' }}
+        sx={{ marginLeft: -1.5 }}
+      >
+        <VuexyLogo className='text-2xl text-primary' />
+      </Badge>
       <LogoText
         color={color}
         ref={logoTextRef}
